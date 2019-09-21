@@ -9,7 +9,7 @@ attendance.loc[:, 'attendance'] = pd.to_numeric(attendance.loc[:, 'attendance'])
 
 attendance.plot(x='year', y='attendance', figsize=(15, 7), kind='bar')
 
-plt.xlabel('year')
-plt.ylable('Attendance')
-plt.axhline(y = attendance['attendance'].mean(), ylable='mean', linestyle='--', color = 'green')
+plt.xlabel('Year')
+plt.ylabel('Attendance')
+plt.axhline(y = attendance['attendance'].mean(), label='Mean', linestyle='--', color = 'green')
 plt.show()
